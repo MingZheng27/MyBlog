@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/dist/js/lightbox-plus-jquery.min.js,WebRoot/dist/js/jquery-3.1.0.min.js,WebRoot/dist/js/ckeditor.js
+validator.Unchecked=

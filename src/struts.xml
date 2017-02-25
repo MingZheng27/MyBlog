@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="newblog" extends="json-default" namespace="/">
+		<action name="getonearticle" class="com.zmm.action.GetOneArticleAction">
+			<result type="json" name="success">
+				<param name="article">article</param>
+			</result>
+			<result name="failed">/index.jsp</result>
+		</action>
+		<action name="getarticletitle" class="com.zmm.action.GetArticleTitleAcction">
+			<result type="json" name="success">
+				<param name="list">list</param>
+			</result>
+			<result name="failed">/index.jsp</result>
+		</action>
+		<action name="getarticle" class="com.zmm.action.GetArticleAction">
+			<result type="json" name="success">
+				<param name="article">article</param>
+			</result>
+			<result name="failed">/index.jsp</result>
+		</action>
+		<action name="login" class="com.zmm.action.LoginAction">
+			<result name="success" type="redirect">/Manager/Editor.jsp</result>
+			<result name="failed">/Login.jsp</result>
+		</action>
+		<action name="addarticle" class="com.zmm.action.AddArticleAction">
+			<result name="success">/Catlog.jsp</result>
+			<result name="failed">/index.jsp</result>
+		</action>
+		<action name="fileupload" class="com.zmm.action.FileUpLoadAction">
+			<result name="success">/success.jsp</result>
+			<result name="failed">/index.jsp</result>
+		</action>
+		<action name="getimage" class="com.zmm.action.GetImageAction">
+			<result name="success" type="json">
+				<param name="list">list</param>
+			</result>
+			<result name="failed">/index.jsp</result>
+		</action>
+	</package>
+</struts>    
