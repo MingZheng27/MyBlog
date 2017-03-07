@@ -27,7 +27,7 @@ $(function(){
 					content.append('<h4>no articles</h4>');
 				}
 				for (var i = 0 ; i < data.list.length ;i++){
-					content.append('<a href="http://139.129.236.10:8090/NewBlog/details.jsp?id=' + data.list[i][1] +'">'+ data.list[i][0] +'</a></br>' );
+					content.append('<a href="http://localhost:8090/NewBlog/details.jsp?id=' + data.list[i][1] +'">'+ data.list[i][0] +'</a></br>' );
 				}
 			}
 		});

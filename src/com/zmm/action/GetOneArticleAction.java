@@ -20,7 +20,7 @@ public class GetOneArticleAction extends ActionSupport {
 	public String execute() throws Exception {
 		try{
 		ArticleDaoImpl articleDaoImpl = (ArticleDaoImpl) ApplicationUtil.getBean("ArticleDaoImpl");
-		article = articleDaoImpl.getNewest();
+		article = articleDaoImpl.loadNewest();
 		return "success";
 		}catch(Exception e){
 			e.printStackTrace();

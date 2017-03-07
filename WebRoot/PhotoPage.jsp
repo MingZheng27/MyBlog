@@ -22,7 +22,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <link href="dist/css/mycss.css" rel="stylesheet">
     <script src="dist/js/jquery-3.1.0.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-	<script src="dist/js/photos.js?ver=1.0"></script>
+	<script src="dist/js/photos.js?ver=1.1"></script>
   </head>
   
   <body>

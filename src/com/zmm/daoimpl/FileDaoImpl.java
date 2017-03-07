@@ -19,11 +19,13 @@ public class FileDaoImpl implements Dao<Images> {
 	@Override
 	public boolean save(Images t) {
 		try{
-			session = sessionFactory.openSession();
-			Transaction tran = session.beginTransaction();
+			//session = sessionFactory.openSession();
+			session = sessionFactory.getCurrentSession();
+			//Transaction ran = session.beginTransaction();
 			session.save(t);
-			tran.commit();
-			session.close();
+			//System.out.println(session.isOpen());
+			//tran.commit();
+			//session.close();
 			return true;
 		}catch(Exception e){
 			return false;
@@ -38,13 +40,14 @@ public class FileDaoImpl implements Dao<Images> {
 
 	@Override
 	public List<Images> list(int num) {
-		session = sessionFactory.openSession();
+		//session = sessionFactory.openSession();
+		session = sessionFactory.getCurrentSession();
 		String hql = "select count(*) from Images";
 		int size = Integer.parseInt(session.createQuery(hql).list().get(0).toString());
 		String hqlm = "from Images where id <= " + (size-10*num) + "and id > " + (size-10*(num + 1) + " order by id desc"); 
 		Query q = session.createQuery(hqlm);
 		List<Images> list = q.list();
-		session.close();
+		//session.close();
 		return list;
 	}
 
@@ -56,10 +59,11 @@ public class FileDaoImpl implements Dao<Images> {
 
 	@Override
 	public int getNum() {
-		session = sessionFactory.openSession();
+		//session = sessionFactory.openSession();
+		session = sessionFactory.getCurrentSession();
 		String hql = "select count(*) from Images";
 		int size = Integer.parseInt(session.createQuery(hql).list().get(0).toString());
-		session.close();
+		//session.close();
 		return size;
 	}
 
