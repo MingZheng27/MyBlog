@@ -14,11 +14,11 @@ public class LoginAction extends ActionSupport{
 	@Override
 	public String execute() throws Exception {
 		try{
-		if (username.equals("zmm")&&password.equals("123456")){
-			ServletActionContext.getRequest().getSession().setAttribute("username", "zmm");
+		if (username.equals("xxx")&&password.equals("xxxxx")){
+			ServletActionContext.getRequest().getSession().setAttribute("username", "xxx");
 			return "success";
 		}else{
-			ServletActionContext.getRequest().setAttribute("info", "用户名或密码错误");
+			ServletActionContext.getRequest().setAttribute("info", "脫脙禄搂脙没禄貌脙脺脗毛麓铆脦贸");
 			return "failed";
 		}
 		}catch(Exception e){
