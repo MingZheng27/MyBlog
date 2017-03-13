@@ -45,6 +45,9 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 		</property>
 		<property name="username" value="root"></property>
 		<property name="password" value="123456"></property>
+		<property name="testOnBorrow" value="true"></property>
+		<property name="validationQuery" value="select 1"></property>
+		<!-- 自动验证防止mysql连接超过8小时被回收后从连接池取到无效的连接 -->
 	</bean>
 
 	<bean id="sessionFactory"
