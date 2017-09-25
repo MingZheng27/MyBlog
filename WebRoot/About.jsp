@@ -54,14 +54,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <p id="content">
             <h3>关于我：</h3>
             <hr>
-            武汉理工大学大三学生，学的是通信，有一颗计算机的心，最爱java，会做android，
-            也会javaweb，四六级都过，熟练掌握java和常用的数据结构与算法，熟悉http、tcp/ip等常用的网络协议，熟悉MySQL及SQL语言。
-熟悉Struts、Spring、Hibernate、SpringMVC等常用框架，能够利用SSH框架进行网站搭建。
-熟悉Android开发，能够熟练运用ViewPager、Fragment、RecyclerView等常用控件。
-对js、json、ajax技术有一定的了解。会使用git进行版本控制。<br><br><h3>获奖情况：</h3>
-            <hr>
-            	武汉理工大学第十五届计算机科技文化节之“ACM程序设计大赛”一等奖<br>
-	2014-2015学年院优秀团支书
+            一个大菜逼，一只单身狗.<br><br><h3>目标：</h3>
+            <hr>1.开始攒10w块钱   0/100000<br>
+            	2.看dubbo,brpc源码 2017.9月中开始看dubbo<br>
+            	3.学会使用netty<br>
             <br><br>
             <h3>等级证书：</h3><hr>
             计算机二级、英语四级（CET-4）、英语六级（CET-6）
@@ -69,11 +65,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <hr>
             1.这个个人博客<br>
             2.一个利用看知乎api搭建的android app<br>
-            3.基于SSH框架的简单数据管理系统
+            3.Java爬虫
             <hr>
-            如果你愿意给我一个面试/笔试的机会？
             <br>
-            请联系我：270417599@qq.com
+            联系：270417599@qq.com
             </p>
           </div><!-- /.blog-post -->
 
